@@ -10,8 +10,8 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region References
-    private Transform cameraTransform;
     private Rigidbody rb;
+    private Transform cameraTransform;
     #endregion
 
     #region InternalVariables
@@ -35,6 +35,9 @@ public class PlayerController : MonoBehaviour
 
     private void Update() {
         Look();
+    }
+
+    private void LateUpdate() {
     }
 
     private void FixedUpdate() {
